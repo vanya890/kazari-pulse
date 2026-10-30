@@ -1,0 +1,30 @@
+{
+  "name": "kazari-pulse",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pulse Drift - a rhythm gate runner for Telegram Mini App",
+  "homepage": "https://vanya890.github.io/kazari-pulse/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanya890/kazari-pulse.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && tgcloud push",
+    "status": "tgcloud status",
+    "diff": "tgcloud diff",
+    "migrate": "tgcloud migrate",
+    "run": "tgcloud run"
+  },
+  "devDependencies": {
+    "@tgcloud/cli": "^0.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.9"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
